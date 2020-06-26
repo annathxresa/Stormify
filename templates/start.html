@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Start
+{% endblock %}
+
+{% block main %}
+    <form action="/start" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="zipcode" placeholder="Zipcode" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Spotify Username" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+{% endblock %}
